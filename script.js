@@ -2,14 +2,18 @@
 
 // Language toggle routing
 const langMap = {
+  // NL → EN
   '/index.html': '/en/index.html',
   '/': '/en/index.html',
   '/boeken.html': '/en/booking.html',
   '/contact.html': '/en/contact.html',
+  '/privacy.html': '/en/privacy.html',
+  // EN → NL
   '/en/': '/index.html',
   '/en/index.html': '/index.html',
   '/en/booking.html': '/boeken.html',
   '/en/contact.html': '/contact.html',
+  '/en/privacy.html': '/privacy.html',
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -18,8 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
     langToggle.addEventListener('click', (e) => {
       e.preventDefault();
       let current = window.location.pathname;
-      // Normalize trailing index
-      if (current.endsWith('/')) current = current + 'index.html';
+      // Normalize trailing slash
+      if (current.endsWith('/') && current !== '/') current = current + 'index.html';
       const target = langMap[current] || '/';
       window.location.href = target;
     });
