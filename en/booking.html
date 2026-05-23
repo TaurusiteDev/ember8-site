@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Booking · Ember 8</title>
+<meta name="description" content="Book a session with Ember 8 — trauma release and breathwork.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=DM+Sans:wght@400;500&family=Exo+2:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="wordmark">
+      <span class="wordmark-main">EMBER<span>8</span></span>
+      <span class="wordmark-sub">break the loop</span>
+    </a>
+    <ul class="nav-links"><li><a href="../index.html" class="">HOME</a></li>
+<li><a href="../booking.html" class="active">BOOKING</a></li>
+<li><a href="../contact.html" class="">CONTACT</a></li></ul>
+    <div class="nav-right">
+      <span class="lang-toggle"><a href="#" id="lang-toggle">NL</a> | <span class="active">EN</span></span>
+      <a href="../booking.html" class="btn btn-primary">BOOK A MOMENT</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-close" id="mobile-close" aria-label="Close">×</button>
+    <a href="../index.html">HOME</a>
+<a href="../booking.html">BOOKING</a>
+<a href="../contact.html">CONTACT</a>
+<a href="../booking.html">BOOK A MOMENT</a>
+    <span class="lang-toggle" style="margin-top:20px"><a href="#" id="lang-toggle">NL</a> | <span class="active">EN</span></span>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container reveal">
+    <span class="label">Reserve</span><span class="label-line" style="margin:14px auto 22px"></span>
+    <h1>Book a moment.</h1>
+    <p class="subtitle">Choose your session and reserve a spot directly.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="sec-intro reveal"><span class="label">Offering & rates</span><span class="label-line"></span><h2>Four sessions. One direction.</h2></div>
+    <div class="booking-grid">
+
+      <div class="booking-card reveal">
+        <div class="booking-card-head"><div><div class="booking-card-num">01</div><div class="booking-card-name">The Interruption</div><div class="booking-card-tag">A first encounter with yourself.</div></div></div>
+        <div class="booking-card-meta"><span class="meta">⏱ 90 minutes<br>📍 Online & in person</span><span class="price">€ 180<span style="font-size:13px;color:var(--color-text-muted);font-family:'DM Sans';margin-left:6px">excl. VAT</span></span></div>
+        <p>For when you feel you're moving in a circle — but can't quite name which one. This isn't an intake. It's a moment to pause, look, and feel what's actually happening.</p>
+        <div style="font-family:'Exo 2';font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-text-muted);margin-bottom:10px">What to expect</div>
+        <ul class="exp-list"><li>A conversation that goes differently than you expect</li><li>Body-oriented exercises attuned to what arises</li><li>A sense of recognition — without judgment</li></ul>
+        <a href="#" class="btn btn-primary">Book this session</a>
+      </div>
+      <div class="booking-card reveal">
+        <div class="booking-card-head"><div><div class="booking-card-num">02</div><div class="booking-card-name">The Mirror</div><div class="booking-card-tag">What you can't see alone.</div></div></div>
+        <div class="booking-card-meta"><span class="meta">⏱ 120 minutes<br>📍 In person (2 people)</span><span class="price">€ 360<span style="font-size:13px;color:var(--color-text-muted);font-family:'DM Sans';margin-left:6px">excl. VAT</span></span></div>
+        <p>Some patterns only become visible in relationship. The Mirror is for two people — partners, friends, colleagues — who get stuck in how they connect.</p>
+        <div style="font-family:'Exo 2';font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-text-muted);margin-bottom:10px">What to expect</div>
+        <ul class="exp-list"><li>Working with what's between you</li><li>Body-oriented exercises for two</li><li>More space, less reaction</li></ul>
+        <a href="#" class="btn btn-primary">Book together</a>
+      </div>
+      <div class="booking-card reveal">
+        <div class="booking-card-head"><div><div class="booking-card-num">03</div><div class="booking-card-name">The Field</div><div class="booking-card-tag">In the presence of others you become visible.</div></div></div>
+        <div class="booking-card-meta"><span class="meta">👥 4–8 people<br>📍 In person</span><span class="price">from € 90<span style="font-size:13px;color:var(--color-text-muted);font-family:'DM Sans';margin-left:6px">excl. VAT</span></span></div>
+        <p>Group sessions with breathwork and shared awareness. In a small, safe group you discover what shifts when others witness.</p>
+        <div style="font-family:'Exo 2';font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-text-muted);margin-bottom:10px">What to expect</div>
+        <ul class="exp-list"><li>Guided group breathwork</li><li>Silent presence and shared space</li><li>Optional debrief afterwards</li></ul>
+        <a href="#" class="btn btn-primary">See available dates</a>
+      </div>
+      <div class="booking-card reveal">
+        <div class="booking-card-head"><div><div class="booking-card-num">04</div><div class="booking-card-name">Break The Loop</div><div class="booking-card-tag">The trajectory for those ready to break the circle.</div></div></div>
+        <div class="booking-card-meta"><span class="meta">⏱ 4 × 90–120 min sessions<br>📍 Online & in person</span><span class="price">from € 950<span style="font-size:13px;color:var(--color-text-muted);font-family:'DM Sans';margin-left:6px">excl. VAT</span></span></div>
+        <p>Four sessions focused on one persistent pattern — emotional, relational or behavioural. We work deep, slow and precise.</p>
+        <div style="font-family:'Exo 2';font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-text-muted);margin-bottom:10px">What to expect</div>
+        <ul class="exp-list"><li>Four extensive sessions</li><li>Message support between sessions</li><li>A concrete shift in one specific pattern</li></ul>
+        <a href="#" class="btn btn-primary">Start the trajectory</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--color-bg-secondary)">
+  <div class="container">
+    <div class="sec-intro reveal"><span class="label">Reserve a spot</span><span class="label-line"></span><h2>Don't choose perfect timing. Choose a start.</h2><p class="subtitle">Select a session and pick an available moment.</p></div>
+    <div class="calendly-wrap reveal">
+      <!-- Replace YOUR_CALENDLY_URL with your Calendly link -->
+      <div class="calendly-inline-widget calendly-placeholder" data-url="https://calendly.com/YOUR_CALENDLY_URL">📅 [Calendly widget — replace YOUR_CALENDLY_URL in the embed code with your Calendly link]</div>
+    </div>
+    <p class="cal-note">⏱ Timezone: Europe/Amsterdam · After booking you'll receive a confirmation by email.</p>
+    <div class="info-box"><strong>💳 Payment</strong>After confirming your reservation you'll receive a payment link by email via Mollie. Payment is due before the session.</div>
+  </div>
+</section>
+
+<section class="bio">
+  <div class="container">
+    <div class="reveal"><span class="label">Frequently asked</span><span class="label-line"></span><h2>Before you book.</h2></div>
+    <div class="accordion">
+      <details><summary>Do I need to know what my 'problem' is?</summary><p>No. Many people come without a clear question. That's fine — the session finds its own direction.</p></details>
+      <details><summary>Can I cancel?</summary><p>Cancellation up to 48 hours before the session: free. After that, 50% of the rate is charged.</p></details>
+      <details><summary>Is this suitable for severe trauma?</summary><p>I work trauma-informed but am not a psychotherapist. For complex PTSD I refer to certified therapists.</p></details>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <span class="wordmark-main" style="font-family:'Exo 2';font-weight:300;font-size:22px;color:var(--color-text-primary)">EMBER<span style="color:var(--color-accent)">8</span></span>
+        <div class="wordmark-sub" style="font-family:'Exo 2';font-weight:300;font-size:9px;color:var(--color-text-muted);letter-spacing:.2em;margin-top:4px">break the loop</div>
+        <p class="footer-tag">Not to get further.<br>But to turn around —<br>not to turn back.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="7" y1="10" x2="7" y2="17"/><circle cx="7" cy="7" r=".8" fill="currentColor" stroke="none"/><path d="M11 17v-7M11 13c0-2 1.5-3 3-3s3 1 3 3v4"/></svg></a>
+          <a href="mailto:info@ember8.nl" aria-label="Email"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>NAVIGATION</h4>
+        <ul><li><a href="../index.html">Home</a></li><li><a href="../booking.html">Booking</a></li><li><a href="../contact.html">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>PRACTICAL</h4>
+        <ul><li><a href="#">FAQ</a></li><li><a href="#">Pricing</a></li><li><a href="#">Payment & terms</a></li><li><a href="#">Privacy</a></li></ul>
+      </div>
+      <div>
+        <h4>STAY IN TOUCH</h4>
+        <p>Receive inspiration and new sessions.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault();this.reset();">
+          <input type="email" placeholder="your@email.com" required>
+          <button type="submit" aria-label="Subscribe">→</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">© EMBER 8 2025 · All rights reserved. · <a href="#">Privacy</a> · <a href="#">Terms</a></div>
+  </div>
+</footer>
+<script src="../script.js"></script>
+</body>
+</html>
