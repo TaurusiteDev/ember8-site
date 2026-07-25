@@ -8,14 +8,12 @@ const langMap = {
   '/boeken.html': '/en/booking.html',
   '/contact.html': '/en/contact.html',
   '/privacy.html': '/en/privacy.html',
-  '/over.html': '/en/about.html',
   // EN → NL
   '/en/': '/index.html',
   '/en/index.html': '/index.html',
   '/en/booking.html': '/boeken.html',
   '/en/contact.html': '/contact.html',
   '/en/privacy.html': '/privacy.html',
-  '/en/about.html': '/over.html',
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -79,33 +77,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-
-  // About Ember8 popup — opens an in-page modal instead of navigating to a
-  // separate page, so the main nav can stay Home / Boeken / Contact.
-  const aboutOpenBtn = document.getElementById('about-open-btn');
-  const aboutModal = document.getElementById('about-modal');
-  const aboutCloseBtn = document.getElementById('about-close-btn');
-
-  const openAboutModal = () => {
-    if (!aboutModal) return;
-    aboutModal.classList.add('open');
-    document.body.classList.add('modal-open');
-  };
-  const closeAboutModal = () => {
-    if (!aboutModal) return;
-    aboutModal.classList.remove('open');
-    document.body.classList.remove('modal-open');
-  };
-
-  if (aboutOpenBtn) aboutOpenBtn.addEventListener('click', openAboutModal);
-  if (aboutCloseBtn) aboutCloseBtn.addEventListener('click', closeAboutModal);
-  if (aboutModal) {
-    // Click on the dark overlay (outside the box) also closes it
-    aboutModal.addEventListener('click', (e) => {
-      if (e.target === aboutModal) closeAboutModal();
-    });
-  }
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeAboutModal();
-  });
 });

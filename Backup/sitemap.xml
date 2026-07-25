@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://ember8.nl/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ember8.nl/over.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://ember8.nl/boeken.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ember8.nl/contact.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ember8.nl/en/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ember8.nl/en/about.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://ember8.nl/en/booking.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ember8.nl/en/contact.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

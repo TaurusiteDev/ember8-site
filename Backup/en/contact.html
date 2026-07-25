@@ -20,7 +20,6 @@
     <ul class="nav-links">
       <li><a href="index.html" class="">HOME</a></li>
       <li><a href="booking.html" class="">BOOK</a></li>
-      <li><a href="about.html" class="">ABOUT</a></li>
       <li><a href="contact.html" class="active">CONTACT</a></li>
     </ul>
     <div class="nav-right">
@@ -36,73 +35,28 @@
     <img src="../images/logo-white.png" alt="Ember 8" class="mobile-logo" style="margin-bottom:8px">
     <a href="index.html">HOME</a>
     <a href="booking.html">BOOK</a>
-    <a href="about.html">ABOUT</a>
     <a href="contact.html">CONTACT</a>
     <a href="booking.html">SCHEDULE A SESSION</a>
     <span class="lang-toggle" style="margin-top:20px"><a href="../contact.html">NL</a> | <span class="active">EN</span></span>
   </div>
 </nav>
 
-<section class="page-hero" style="padding:140px 0 80px;text-align:left">
-  <div class="container reveal two-col" style="align-items:center;gap:48px">
-    <div>
-      <span class="label">Contact</span><span class="label-line"></span>
-      <h1>The first step begins with a conversation.</h1>
-      <p class="subtitle">Read how others have experienced Ember8, or get in touch without obligation.</p>
-    </div>
-    <div class="photo-ph aspect-16-9" style="background-image:url('../images/voor-organisaties.jpg');background-size:cover;background-position:center;color:transparent;min-height:260px"></div>
+<section class="page-hero" style="padding:140px 0 80px">
+  <div class="container reveal">
+    <span class="label">Contact</span><span class="label-line" style="margin:14px auto 22px"></span>
+    <h1>Start by stopping.</h1>
+    <p class="subtitle">Send a message — I'll respond within 48 hours.</p>
   </div>
 </section>
 
-<section style="padding-bottom:56px">
-  <div class="container">
-    <div class="sec-intro reveal" style="text-align:center;margin-left:auto;margin-right:auto;margin-bottom:36px">
-      <span class="label">Experiences from others</span><span class="label-line" style="margin-left:auto;margin-right:auto"></span>
-    </div>
-    <div class="testimonials-grid" style="grid-template-columns:repeat(4,1fr)">
-      <div class="quote-card reveal">
-        <div style="color:var(--color-accent);letter-spacing:2px;margin-bottom:6px">★★★★★</div>
-        <p class="quote-text" style="font-size:17px">I came for stress, but went home with far more understanding for myself.</p>
-        <div class="quote-author">— Marieke, 42</div>
-      </div>
-      <div class="quote-card reveal">
-        <div style="color:var(--color-accent);letter-spacing:2px;margin-bottom:6px">★★★★★</div>
-        <p class="quote-text" style="font-size:17px">From the first moment I felt seen. No judgement, just genuine attention.</p>
-        <div class="quote-author">— Jeroen, 36</div>
-      </div>
-      <div class="quote-card reveal">
-        <div style="color:var(--color-accent);letter-spacing:2px;margin-bottom:6px">★★★★★</div>
-        <p class="quote-text" style="font-size:17px">The combination of talking and body work brought me incredibly far.</p>
-        <div class="quote-author">— Sanne, 29</div>
-      </div>
-      <div class="quote-card reveal">
-        <div style="color:var(--color-accent);letter-spacing:2px;margin-bottom:6px">★★★★★</div>
-        <p class="quote-text" style="font-size:17px">No tricks. No rush. Just someone who truly listens and guides you.</p>
-        <div class="quote-author">— Bas, 47</div>
-      </div>
-    </div>
-    <p style="text-align:center;margin-top:28px"><a href="#" style="color:var(--color-accent);font-family:'Exo 2',sans-serif;font-size:12px;letter-spacing:.1em;text-transform:uppercase">Read more experiences on Google →</a></p>
-  </div>
-</section>
-
-<section style="padding-top:0">
+<section>
   <div class="container">
     <div class="contact-grid">
       <div class="reveal">
-        <span class="label">Frequently asked questions</span><span class="label-line"></span>
-        <div class="accordion" style="margin-top:16px">
-          <details><summary>Is a first session non-committal?</summary><p>A first session is not a long-term commitment. It is an introduction — to yourself and to the way of working.</p></details>
-          <details><summary>Do you offer payment in instalments?</summary><p>For the deepening programme, payment in two instalments is possible. Get in touch to discuss the options.</p></details>
-          <details><summary>Do you work with insurance?</summary><p>My sessions are currently outside regular insurance coverage. Some supplementary insurance plans partially reimburse coaching — check with your insurer.</p></details>
-          <details><summary>Can I also do this online?</summary><p>Yes, some sessions are also available online. We'll discuss the options when booking.</p></details>
-        </div>
-      </div>
-
-      <div class="reveal">
-        <span class="label">Ready for a first step?</span><span class="label-line"></span>
-        <p style="margin-bottom:20px;color:var(--color-text-muted)">You don't need to be certain of anything yet. A message is enough for us to look at what fits.</p>
+        <span class="label">Send a message</span><span class="label-line"></span>
         <div id="form-success" class="form-success">✓ Thank you for your message. We'll be in touch as soon as possible.</div>
-        <form id="contact-form" action="https://formspree.io/f/xwvgwwdl" method="POST">
+        <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="hidden" name="_replyto" value="info@ember8.nl">
           <input type="hidden" name="_subject" value="New message via ember8.nl (EN)">
           <div class="form-row">
             <label for="naam">Name *</label>
@@ -130,13 +84,6 @@
           <button type="submit" class="btn btn-primary">Send →</button>
         </form>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="bio">
-  <div class="container">
-    <div class="two-col">
       <div class="info-stack reveal">
         <div><span class="label">📍 Location</span><p>Sessions online via secure video call.<br>In person: [city/location — to be filled in]</p></div>
         <div><span class="label">⏱ Response time</span><p>Within 48 hours on working days.</p></div>
@@ -144,17 +91,20 @@
         <div><span class="label">💳 Payment</span><p>Payment via Mollie payment link after confirmation. Invoice per session or programme — excl. VAT.</p></div>
         <div><span class="label">🔒 Privacy</span><p>Your data is handled confidentially and never shared with third parties.</p></div>
       </div>
-      <div class="reveal">
-        <span class="label">Also for organisations</span><span class="label-line"></span>
-        <p>Alongside individual guidance, Ember8 also offers tailored support for organisations.</p>
-        <ul class="exp-list" style="margin-top:16px">
-          <li>Coaching</li>
-          <li>Team guidance</li>
-          <li>Group sessions</li>
-          <li>Tailored programmes</li>
-        </ul>
-        <p>Every organisation is different. That's why we always look together for the right fit. Get in touch without obligation.</p>
-      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bio">
+  <div class="container">
+    <div class="reveal">
+      <span class="label">Frequently asked questions</span><span class="label-line"></span>
+      <h2>Before you send a message.</h2>
+    </div>
+    <div class="accordion">
+      <details><summary>Is a first session non-committal?</summary><p>A first session is not a long-term commitment. It is an introduction — to yourself and to the way of working.</p></details>
+      <details><summary>Do you offer payment in instalments?</summary><p>For the Break The Loop programme, payment in two instalments is possible. Get in touch to discuss the options.</p></details>
+      <details><summary>Do you work with insurance?</summary><p>My sessions are currently outside regular insurance coverage. Some supplementary insurance plans partially reimburse coaching — check with your insurer.</p></details>
     </div>
   </div>
 </section>
@@ -173,7 +123,7 @@
       </div>
       <div>
         <h4>NAVIGATION</h4>
-        <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Ember8</a></li><li><a href="booking.html">Book</a></li><li><a href="contact.html">Contact</a></li></ul>
+        <ul><li><a href="index.html">Home</a></li><li><a href="booking.html">Book</a></li><li><a href="contact.html">Contact</a></li></ul>
       </div>
       <div>
         <h4>PRACTICAL</h4>

@@ -20,7 +20,6 @@
     <ul class="nav-links">
       <li><a href="index.html" class="">HOME</a></li>
       <li><a href="boeken.html" class="">BOEKEN</a></li>
-      <li><a href="over.html" class="">OVER EMBER8</a></li>
       <li><a href="contact.html" class="active">CONTACT</a></li>
     </ul>
     <div class="nav-right">
@@ -36,73 +35,28 @@
     <img src="images/logo-white.png" alt="Ember 8" class="mobile-logo" style="margin-bottom:8px">
     <a href="index.html">HOME</a>
     <a href="boeken.html">BOEKEN</a>
-    <a href="over.html">OVER EMBER8</a>
     <a href="contact.html">CONTACT</a>
     <a href="boeken.html">PLAN EEN MOMENT</a>
     <span class="lang-toggle" style="margin-top:20px"><span class="active">NL</span> | <a href="en/contact.html">EN</a></span>
   </div>
 </nav>
 
-<section class="page-hero" style="padding:140px 0 80px;text-align:left">
-  <div class="container reveal two-col" style="align-items:center;gap:48px">
-    <div>
-      <span class="label">Contact</span><span class="label-line"></span>
-      <h1>De eerste stap begint met een gesprek.</h1>
-      <p class="subtitle">Lees hoe anderen Ember8 hebben ervaren, of neem vrijblijvend contact op.</p>
-    </div>
-    <div class="photo-ph aspect-16-9" style="background-image:url('images/voor-organisaties.jpg');background-size:cover;background-position:center;color:transparent;min-height:260px"></div>
+<section class="page-hero" style="padding:140px 0 80px">
+  <div class="container reveal">
+    <span class="label">Contact</span><span class="label-line" style="margin:14px auto 22px"></span>
+    <h1>Begin met stoppen.</h1>
+    <p class="subtitle">Stuur een bericht — ik reageer binnen 48 uur.</p>
   </div>
 </section>
 
-<section style="padding-bottom:56px">
-  <div class="container">
-    <div class="sec-intro reveal" style="text-align:center;margin-left:auto;margin-right:auto;margin-bottom:36px">
-      <span class="label">Ervaringen van anderen</span><span class="label-line" style="margin-left:auto;margin-right:auto"></span>
-    </div>
-    <div class="testimonials-grid" style="grid-template-columns:repeat(4,1fr)">
-      <div class="quote-card reveal">
-        <div style="color:var(--color-accent);letter-spacing:2px;margin-bottom:6px">★★★★★</div>
-        <p class="quote-text" style="font-size:17px">Ik kwam voor stress, maar ging naar huis met veel meer begrip voor mezelf.</p>
-        <div class="quote-author">— Marieke, 42</div>
-      </div>
-      <div class="quote-card reveal">
-        <div style="color:var(--color-accent);letter-spacing:2px;margin-bottom:6px">★★★★★</div>
-        <p class="quote-text" style="font-size:17px">Vanaf het eerste moment voelde ik me gezien. Geen oordeel, alleen oprechte aandacht.</p>
-        <div class="quote-author">— Jeroen, 36</div>
-      </div>
-      <div class="quote-card reveal">
-        <div style="color:var(--color-accent);letter-spacing:2px;margin-bottom:6px">★★★★★</div>
-        <p class="quote-text" style="font-size:17px">De combinatie van praten en lichaamswerk heeft me ongelooflijk veel gebracht.</p>
-        <div class="quote-author">— Sanne, 29</div>
-      </div>
-      <div class="quote-card reveal">
-        <div style="color:var(--color-accent);letter-spacing:2px;margin-bottom:6px">★★★★★</div>
-        <p class="quote-text" style="font-size:17px">Geen trucjes. Geen haast. Gewoon iemand die echt luistert en je begeleidt.</p>
-        <div class="quote-author">— Bas, 47</div>
-      </div>
-    </div>
-    <p style="text-align:center;margin-top:28px"><a href="#" style="color:var(--color-accent);font-family:'Exo 2',sans-serif;font-size:12px;letter-spacing:.1em;text-transform:uppercase">Lees meer ervaringen op Google →</a></p>
-  </div>
-</section>
-
-<section style="padding-top:0">
+<section>
   <div class="container">
     <div class="contact-grid">
       <div class="reveal">
-        <span class="label">Veelgestelde vragen</span><span class="label-line"></span>
-        <div class="accordion" style="margin-top:16px">
-          <details><summary>Is een eerste sessie vrijblijvend?</summary><p>Een eerste sessie is geen langdurig commitment. Het is een kennismaking — met jezelf en met de manier van werken.</p></details>
-          <details><summary>Bieden jullie betaling in termijnen?</summary><p>Voor het verdiepingstraject is betaling in twee termijnen mogelijk. Neem contact op voor de mogelijkheden.</p></details>
-          <details><summary>Werken jullie ook met verzekeringen?</summary><p>Mijn sessies vallen momenteel buiten de reguliere verzekeringsdekking. Sommige aanvullende verzekeringen vergoeden coaching gedeeltelijk — informeer bij jouw verzekeraar.</p></details>
-          <details><summary>Kan ik ook online terecht?</summary><p>Ja, een deel van de sessies is ook online mogelijk. Bespreek de mogelijkheden bij het boeken.</p></details>
-        </div>
-      </div>
-
-      <div class="reveal">
-        <span class="label">Klaar voor een eerste stap?</span><span class="label-line"></span>
-        <p style="margin-bottom:20px;color:var(--color-text-muted)">Je hoeft nog niets zeker te weten. Een bericht is genoeg om samen te kijken wat past.</p>
+        <span class="label">Stuur een bericht</span><span class="label-line"></span>
         <div id="form-success" class="form-success">✓ Bedankt voor je bericht. We nemen zo snel mogelijk contact op.</div>
-        <form id="contact-form" action="https://formspree.io/f/xwvgwwdl" method="POST">
+        <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="hidden" name="_replyto" value="info@ember8.nl">
           <input type="hidden" name="_subject" value="Nieuw bericht via ember8.nl">
           <div class="form-row">
             <label for="naam">Naam *</label>
@@ -130,13 +84,6 @@
           <button type="submit" class="btn btn-primary">Versturen →</button>
         </form>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="bio">
-  <div class="container">
-    <div class="two-col">
       <div class="info-stack reveal">
         <div><span class="label">📍 Locatie</span><p>Sessies online via beveiligde videocall.<br>In persoon: [stad/locatie — in te vullen]</p></div>
         <div><span class="label">⏱ Reactietijd</span><p>Binnen 48 uur op werkdagen.</p></div>
@@ -144,17 +91,20 @@
         <div><span class="label">💳 Betaling</span><p>Betaling via Mollie betaallink na bevestiging. Factuur per sessie of traject — ex btw.</p></div>
         <div><span class="label">🔒 Privacy</span><p>Jouw gegevens worden vertrouwelijk behandeld en nooit gedeeld met derden.</p></div>
       </div>
-      <div class="reveal">
-        <span class="label">Ook voor organisaties</span><span class="label-line"></span>
-        <p>Naast individuele begeleiding biedt Ember8 ook maatwerk voor organisaties.</p>
-        <ul class="exp-list" style="margin-top:16px">
-          <li>Coaching</li>
-          <li>Teambegeleiding</li>
-          <li>Groepssessies</li>
-          <li>Maatwerktrajecten</li>
-        </ul>
-        <p>Iedere organisatie is anders. Daarom kijken we altijd samen naar een passende invulling. Neem vrijblijvend contact op.</p>
-      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bio">
+  <div class="container">
+    <div class="reveal">
+      <span class="label">Veelgestelde vragen</span><span class="label-line"></span>
+      <h2>Voor je een bericht stuurt.</h2>
+    </div>
+    <div class="accordion">
+      <details><summary>Is een eerste sessie vrijblijvend?</summary><p>Een eerste sessie is geen langdurig commitment. Het is een kennismaking — met jezelf en met de manier van werken.</p></details>
+      <details><summary>Bieden jullie betaling in termijnen?</summary><p>Voor het Break The Loop traject is betaling in twee termijnen mogelijk. Neem contact op voor de mogelijkheden.</p></details>
+      <details><summary>Werken jullie ook met verzekeringen?</summary><p>Mijn sessies vallen momenteel buiten de reguliere verzekeringsdekking. Sommige aanvullende verzekeringen vergoeden coaching gedeeltelijk — informeer bij jouw verzekeraar.</p></details>
     </div>
   </div>
 </section>
@@ -173,7 +123,7 @@
       </div>
       <div>
         <h4>NAVIGATIE</h4>
-        <ul><li><a href="index.html">Home</a></li><li><a href="over.html">Over Ember8</a></li><li><a href="boeken.html">Boeken</a></li><li><a href="contact.html">Contact</a></li></ul>
+        <ul><li><a href="index.html">Home</a></li><li><a href="boeken.html">Boeken</a></li><li><a href="contact.html">Contact</a></li></ul>
       </div>
       <div>
         <h4>PRAKTISCH</h4>
