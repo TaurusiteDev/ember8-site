@@ -9,6 +9,8 @@ const langMap = {
   '/contact.html': '/en/contact.html',
   '/privacy.html': '/en/privacy.html',
   '/over.html': '/en/about.html',
+  '/voorwaarden.html': '/en/terms.html',
+  '/disclaimer.html': '/en/disclaimer.html',
   // EN → NL
   '/en/': '/index.html',
   '/en/index.html': '/index.html',
@@ -16,6 +18,8 @@ const langMap = {
   '/en/contact.html': '/contact.html',
   '/en/privacy.html': '/privacy.html',
   '/en/about.html': '/over.html',
+  '/en/terms.html': '/voorwaarden.html',
+  '/en/disclaimer.html': '/disclaimer.html',
 };
 
 document.addEventListener('DOMContentLoaded', () => {
